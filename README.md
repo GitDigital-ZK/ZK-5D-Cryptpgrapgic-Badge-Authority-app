@@ -1,3 +1,14 @@
+```iframe
+<iframe src="https://github.com/sponsors/RickCreator87/card" title="Sponsor RickCreator87" height="225" width="600" style="border: 0;"></iframe>
+```
+
+https://github.com/sponsors/RickCreator87/card
+
+<a href='https://ko-fi.com/T6T61WAZYZ' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi5.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+
+
+
+
 ===== FILE: README.md =====
 
 ZK-5D-Cryptographic-Badge-Authority-app
