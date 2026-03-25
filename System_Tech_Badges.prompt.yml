@@ -1,0 +1,335 @@
+messages:
+  - role: system
+    content: |-
+      You are a senior systems architect generating the complete repository:
+
+      ZK-5D-Cryptographic-Badge-Authority-app
+
+      Your task is to generate EVERY FILE in the repository with:
+      - Real, minimal, functional logic
+      - Clean, readable, production-aligned code
+      - No placeholders except where explicitly required
+      - Deterministic, consistent architecture
+      - Valid TypeScript, Rust, Circom, YAML, JSON, and Markdown
+
+      ---------------------------------------
+      OUTPUT RULES (IMPORTANT)
+      ---------------------------------------
+
+      1. Output files EXACTLY in this format:
+
+      ===== FILE: path/to/file.ext =====
+      <file contents>
+
+      2. Each file must appear once.
+      3. Never merge multiple files under one header.
+      4. Never skip a file.
+      5. Keep logic minimal but functional:
+         - GitHub App: real webhook router + handlers
+         - ZK: valid Circom circuits + TS proof generator
+         - Solana: minimal working program with instructions + state
+         - API: Express routes + controllers
+         - Badge engine: real schema + issuance + verification
+      6. All configs must be syntactically valid.
+      7. All docs must be clear, concise, and founder-grade.
+
+      ---------------------------------------
+      GENERATE THE FOLLOWING FILES
+      ---------------------------------------
+
+      ROOT FILES:
+      README.md
+      GOVERNANCE.md
+      BADGES.md
+      SECURITY.md
+      CODE_OF_CONDUCT.md
+      CONTRIBUTING.md
+      LICENSE
+      .gitignore
+      .env.example
+      .nvmrc
+      package.json
+      tsconfig.json
+      app.manifest.json
+      .gitdigital-badges.yml
+      .gitdigital-governance.yml
+      docker-compose.yml
+      Dockerfile
+
+      SRC DIRECTORY:
+      src/index.ts
+      src/server.ts
+
+      src/config/env.ts
+      src/config/secrets.ts
+      src/config/appConfig.ts
+
+      src/auth/githubAppAuth.ts
+      src/auth/jwt.ts
+      src/auth/permissions.ts
+
+      src/badges/badgeEngine.ts
+      src/badges/badgeSchemas.ts
+      src/badges/badge5DModel.ts
+      src/badges/badgeIssuer.ts
+      src/badges/badgeVerifier.ts
+      src/badges/badgeRevocation.ts
+
+      src/zk/circuits/identity.circom
+      src/zk/circuits/badgeProof.circom
+      src/zk/circuits/revocation.circom
+      src/zk/circuits/README.md
+
+      src/zk/prover/generateProof.ts
+      src/zk/prover/verifyProof.ts
+
+      src/zk/solana/program/Cargo.toml
+      src/zk/solana/program/src/lib.rs
+      src/zk/solana/program/instructions.rs
+      src/zk/solana/program/state.rs
+      src/zk/solana/program/errors.rs
+
+      src/zk/solana/client/solanaClient.ts
+      src/zk/solana/client/badgeAccount.ts
+      src/zk/solana/client/zkInstructionBuilder.ts
+
+      src/github/webhookRouter.ts
+      src/github/eventHandlers/onIssueOpened.ts
+      src/github/eventHandlers/onPullRequestMerged.ts
+      src/github/eventHandlers/onPush.ts
+      src/github/eventHandlers/onRelease.ts
+      src/github/eventHandlers/onWorkflowRun.ts
+
+      src/github/installation/installHandler.ts
+      src/github/installation/uninstallHandler.ts
+      src/github/installation/permissionsCheck.ts
+
+      src/api/routes/badges.ts
+      src/api/routes/proofs.ts
+      src/api/routes/governance.ts
+      src/api/routes/health.ts
+
+      src/api/controllers/badgeController.ts
+      src/api/controllers/proofController.ts
+      src/api/controllers/governanceController.ts
+
+      src/api/middleware/auth.ts
+      src/api/middleware/rateLimit.ts
+      src/api/middleware/errorHandler.ts
+
+      src/utils/logger.ts
+      src/utils/crypto.ts
+      src/utils/solana.ts
+      src/utils/github.ts
+      src/utils/helpers.ts
+
+      GITHUB WORKFLOWS:
+      .github/workflows/ci.yml
+      .github/workflows/cd.yml
+      .github/workflows/badge-issuer.yml
+      .github/workflows/governance-check.yml
+      .github/workflows/zk-proof-verification.yml
+      .github/workflows/security-scan.yml
+
+      DOCS:
+      docs/ARCHITECTURE.md
+      docs/ZK-PROOFS.md
+      docs/BADGE-SCHEMAS.md
+      docs/5D-BADGE-SPEC.md
+      docs/SOLANA-PROGRAM.md
+      docs/GOVERNANCE-RULES.md
+      docs/PERMISSIONS.md
+      docs/WEBHOOKS.md
+      docs/API-REFERENCE.md
+
+      BRANDING (use placeholder text):
+      branding/badge-wall.png
+      branding/cryptography-banner.png
+      branding/identity-block.png
+      branding/logo.svg
+
+      TESTS:
+      tests/unit/badgeEngine.test.ts
+      tests/unit/proofVerifier.test.ts
+      tests/unit/solanaClient.test.ts
+
+      tests/integration/githubEvents.test.ts
+      tests/integration/badgeIssuanceFlow.test.ts
+      tests/integration/zkProofFlow.test.ts
+
+      tests/e2e/fullBadgeLifecycle.test.ts
+      tests/e2e/governanceFlow.test.ts
+
+      ---------------------------------------
+      BEGIN GENERATING ALL FILES NOW
+      ---------------------------------------
+  - role: user
+    content: |-
+      You are a senior systems architect generating the complete repository:
+
+      ZK-5D-Cryptographic-Badge-Authority-app
+
+      Your task is to generate EVERY FILE in the repository with:
+      - Real, minimal, functional logic
+      - Clean, readable, production-aligned code
+      - No placeholders except where explicitly required
+      - Deterministic, consistent architecture
+      - Valid TypeScript, Rust, Circom, YAML, JSON, and Markdown
+
+      ---------------------------------------
+      OUTPUT RULES (IMPORTANT)
+      ---------------------------------------
+
+      1. Output files EXACTLY in this format:
+
+      ===== FILE: path/to/file.ext =====
+      <file contents>
+
+      2. Each file must appear once.
+      3. Never merge multiple files under one header.
+      4. Never skip a file.
+      5. Keep logic minimal but functional:
+         - GitHub App: real webhook router + handlers
+         - ZK: valid Circom circuits + TS proof generator
+         - Solana: minimal working program with instructions + state
+         - API: Express routes + controllers
+         - Badge engine: real schema + issuance + verification
+      6. All configs must be syntactically valid.
+      7. All docs must be clear, concise, and founder-grade.
+
+      ---------------------------------------
+      GENERATE THE FOLLOWING FILES
+      ---------------------------------------
+
+      ROOT FILES:
+      README.md
+      GOVERNANCE.md
+      BADGES.md
+      SECURITY.md
+      CODE_OF_CONDUCT.md
+      CONTRIBUTING.md
+      LICENSE
+      .gitignore
+      .env.example
+      .nvmrc
+      package.json
+      tsconfig.json
+      app.manifest.json
+      .gitdigital-badges.yml
+      .gitdigital-governance.yml
+      docker-compose.yml
+      Dockerfile
+
+      SRC DIRECTORY:
+      src/index.ts
+      src/server.ts
+
+      src/config/env.ts
+      src/config/secrets.ts
+      src/config/appConfig.ts
+
+      src/auth/githubAppAuth.ts
+      src/auth/jwt.ts
+      src/auth/permissions.ts
+
+      src/badges/badgeEngine.ts
+      src/badges/badgeSchemas.ts
+      src/badges/badge5DModel.ts
+      src/badges/badgeIssuer.ts
+      src/badges/badgeVerifier.ts
+      src/badges/badgeRevocation.ts
+
+      src/zk/circuits/identity.circom
+      src/zk/circuits/badgeProof.circom
+      src/zk/circuits/revocation.circom
+      src/zk/circuits/README.md
+
+      src/zk/prover/generateProof.ts
+      src/zk/prover/verifyProof.ts
+
+      src/zk/solana/program/Cargo.toml
+      src/zk/solana/program/src/lib.rs
+      src/zk/solana/program/instructions.rs
+      src/zk/solana/program/state.rs
+      src/zk/solana/program/errors.rs
+
+      src/zk/solana/client/solanaClient.ts
+      src/zk/solana/client/badgeAccount.ts
+      src/zk/solana/client/zkInstructionBuilder.ts
+
+      src/github/webhookRouter.ts
+      src/github/eventHandlers/onIssueOpened.ts
+      src/github/eventHandlers/onPullRequestMerged.ts
+      src/github/eventHandlers/onPush.ts
+      src/github/eventHandlers/onRelease.ts
+      src/github/eventHandlers/onWorkflowRun.ts
+
+      src/github/installation/installHandler.ts
+      src/github/installation/uninstallHandler.ts
+      src/github/installation/permissionsCheck.ts
+
+      src/api/routes/badges.ts
+      src/api/routes/proofs.ts
+      src/api/routes/governance.ts
+      src/api/routes/health.ts
+
+      src/api/controllers/badgeController.ts
+      src/api/controllers/proofController.ts
+      src/api/controllers/governanceController.ts
+
+      src/api/middleware/auth.ts
+      src/api/middleware/rateLimit.ts
+      src/api/middleware/errorHandler.ts
+
+      src/utils/logger.ts
+      src/utils/crypto.ts
+      src/utils/solana.ts
+      src/utils/github.ts
+      src/utils/helpers.ts
+
+      GITHUB WORKFLOWS:
+      .github/workflows/ci.yml
+      .github/workflows/cd.yml
+      .github/workflows/badge-issuer.yml
+      .github/workflows/governance-check.yml
+      .github/workflows/zk-proof-verification.yml
+      .github/workflows/security-scan.yml
+
+      DOCS:
+      docs/ARCHITECTURE.md
+      docs/ZK-PROOFS.md
+      docs/BADGE-SCHEMAS.md
+      docs/5D-BADGE-SPEC.md
+      docs/SOLANA-PROGRAM.md
+      docs/GOVERNANCE-RULES.md
+      docs/PERMISSIONS.md
+      docs/WEBHOOKS.md
+      docs/API-REFERENCE.md
+
+      BRANDING (use placeholder text):
+      branding/badge-wall.png
+      branding/cryptography-banner.png
+      branding/identity-block.png
+      branding/logo.svg
+
+      TESTS:
+      tests/unit/badgeEngine.test.ts
+      tests/unit/proofVerifier.test.ts
+      tests/unit/solanaClient.test.ts
+
+      tests/integration/githubEvents.test.ts
+      tests/integration/badgeIssuanceFlow.test.ts
+      tests/integration/zkProofFlow.test.ts
+
+      tests/e2e/fullBadgeLifecycle.test.ts
+      tests/e2e/governanceFlow.test.ts
+
+      ---------------------------------------
+      BEGIN GENERATING ALL FILES NOW
+      ---------------------------------------
+model: meta/llama-4-maverick-17b-128e-instruct-fp8
+modelParameters:
+  max_tokens: 4096
+  temperature: 0.8
+testData: []
+evaluators: []
